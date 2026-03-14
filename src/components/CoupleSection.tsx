@@ -18,16 +18,26 @@ const CoupleSection = () => {
         viewport={{ once: true }}
         className="relative inline-block mb-10"
       >
-        <div className="absolute -inset-4 border border-gold/30 rounded-t-full rounded-b-lg" 
+        {/* Decorative border */}
+        <div className="absolute -inset-4 border border-gold/30 rounded-[50%_50%_8px_8px]" 
           style={{ animation: "float 4s ease-in-out infinite" }} 
         />
-        <div className="w-56 h-72 md:w-64 md:h-80 rounded-t-full overflow-hidden border-4 border-cream shadow-2xl mx-auto">
+        {/* Photo container — use object-position to frame faces */}
+        <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-cream shadow-2xl mx-auto">
           <img
             src={couplePhoto}
             alt="Ola and Hazem"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         </div>
+        {/* Gold ring accent */}
+        <div 
+          className="absolute -inset-2 rounded-full pointer-events-none"
+          style={{ 
+            border: "1.5px solid hsl(42, 52%, 56%)",
+            opacity: 0.4,
+          }}
+        />
       </motion.div>
 
       <motion.div
