@@ -112,11 +112,24 @@
   }
 }
 
-@keyframes fly {
-  0% { transform: translate(-10vw, 20vh) scale(0.5); opacity: 0; }
-  20% { opacity: 0.3; }
-  80% { opacity: 0.3; }
-  100% { transform: translate(110vw, -10vh) scale(1); opacity: 0; }
+@keyframes fly1 {
+  0% { transform: translate(-10vw, 30vh) scale(0.4); opacity: 0; }
+  10% { opacity: 0.35; }
+  50% { transform: translate(50vw, 10vh) scale(0.7); opacity: 0.3; }
+  90% { opacity: 0.2; }
+  100% { transform: translate(110vw, -15vh) scale(1); opacity: 0; }
+}
+@keyframes fly2 {
+  0% { transform: translate(110vw, 40vh) scale(0.5); opacity: 0; }
+  10% { opacity: 0.25; }
+  50% { transform: translate(50vw, 15vh) scale(0.8); opacity: 0.25; }
+  90% { opacity: 0.15; }
+  100% { transform: translate(-10vw, -5vh) scale(1); opacity: 0; }
+}
+@keyframes fly3 {
+  0% { transform: translate(-5vw, 50vh) scale(0.3); opacity: 0; }
+  15% { opacity: 0.2; }
+  100% { transform: translate(105vw, 5vh) scale(0.9); opacity: 0; }
 }
 
 @keyframes float {
@@ -124,7 +137,25 @@
   50% { transform: translateY(-15px) rotate(3deg); }
 }
 
+@keyframes petalFall {
+  0% { transform: translate(0, -10vh) rotate(0deg) scale(0.6); opacity: 0; }
+  10% { opacity: 0.7; }
+  50% { transform: translate(30px, 50vh) rotate(180deg) scale(0.8); opacity: 0.5; }
+  100% { transform: translate(-20px, 110vh) rotate(360deg) scale(0.4); opacity: 0; }
+}
+
+@keyframes petalFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  25% { transform: translateY(-8px) rotate(5deg) scale(1.05); }
+  75% { transform: translateY(6px) rotate(-3deg) scale(0.95); }
+}
+
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
 }

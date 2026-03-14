@@ -6,7 +6,9 @@ import DetailsSection from "@/components/DetailsSection";
 import MapSection from "@/components/MapSection";
 import MusicToggle from "@/components/MusicToggle";
 import BirdsSVG from "@/components/BirdsSVG";
+import FloatingPetals from "@/components/FloatingPetals";
 import floralDecoration from "@/assets/floral-decoration.png";
+import floralCorner from "@/assets/floral-corner.png";
 
 const Index = () => {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
@@ -27,6 +29,9 @@ const Index = () => {
             {/* Birds animation */}
             <BirdsSVG />
 
+            {/* Floating petals */}
+            <FloatingPetals />
+
             {/* Music toggle */}
             <MusicToggle />
 
@@ -41,6 +46,42 @@ const Index = () => {
 
             {/* Hero / Landing */}
             <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+              {/* Corner florals */}
+              <motion.img
+                src={floralCorner}
+                alt=""
+                className="absolute top-0 left-0 w-32 md:w-48 opacity-25 pointer-events-none"
+                initial={{ opacity: 0, scale: 0.5, rotate: -20 }}
+                animate={{ opacity: 0.25, scale: 1, rotate: 0 }}
+                transition={{ duration: 1.5, delay: 0.2 }}
+              />
+              <motion.img
+                src={floralCorner}
+                alt=""
+                className="absolute bottom-0 right-0 w-32 md:w-48 opacity-25 pointer-events-none rotate-180"
+                initial={{ opacity: 0, scale: 0.5, rotate: 200 }}
+                animate={{ opacity: 0.25, scale: 1, rotate: 180 }}
+                transition={{ duration: 1.5, delay: 0.4 }}
+              />
+
+              {/* Sparkle dots */}
+              {[...Array(6)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute w-1 h-1 rounded-full bg-gold"
+                  style={{
+                    left: `${15 + i * 14}%`,
+                    top: `${20 + (i % 3) * 25}%`,
+                  }}
+                  animate={{ opacity: [0, 1, 0], scale: [0, 1.5, 0] }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    delay: i * 0.5,
+                  }}
+                />
+              ))}
+
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -66,8 +107,8 @@ const Index = () => {
               />
               <motion.p
                 className="font-serif-elegant text-lg md:text-2xl italic text-foreground/70"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.5 }}
               >
                 Are getting married
