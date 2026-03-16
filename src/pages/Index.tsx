@@ -46,22 +46,24 @@ const Index = () => {
 
             {/* Hero / Landing */}
             <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-              {/* Corner florals */}
+              {/* Corner florals — burgundy blooms */}
               <motion.img
-                src={floralCorner}
+                src={burgundyFlower}
                 alt=""
-                className="absolute top-0 left-0 w-32 md:w-48 opacity-25 pointer-events-none"
-                initial={{ opacity: 0, scale: 0.5, rotate: -20 }}
-                animate={{ opacity: 0.25, scale: 1, rotate: 0 }}
-                transition={{ duration: 1.5, delay: 0.2 }}
+                className="absolute top-[-2%] left-[-4%] w-44 md:w-64 lg:w-72 opacity-80 pointer-events-none drop-shadow-lg"
+                style={{ filter: 'saturate(1.1) brightness(0.85)' }}
+                initial={{ opacity: 0, scale: 0.4, rotate: -15 }}
+                animate={{ opacity: 0.8, scale: 1, rotate: 0 }}
+                transition={{ duration: 1.8, delay: 0.2, ease: "easeOut" }}
               />
               <motion.img
-                src={floralCorner}
+                src={burgundyFlower}
                 alt=""
-                className="absolute bottom-0 right-0 w-32 md:w-48 opacity-25 pointer-events-none rotate-180"
-                initial={{ opacity: 0, scale: 0.5, rotate: 200 }}
-                animate={{ opacity: 0.25, scale: 1, rotate: 180 }}
-                transition={{ duration: 1.5, delay: 0.4 }}
+                className="absolute bottom-[-2%] right-[-4%] w-44 md:w-64 lg:w-72 opacity-80 pointer-events-none rotate-180 drop-shadow-lg"
+                style={{ filter: 'saturate(1.1) brightness(0.85)' }}
+                initial={{ opacity: 0, scale: 0.4, rotate: 195 }}
+                animate={{ opacity: 0.8, scale: 1, rotate: 180 }}
+                transition={{ duration: 1.8, delay: 0.4, ease: "easeOut" }}
               />
 
               {/* Sparkle dots */}

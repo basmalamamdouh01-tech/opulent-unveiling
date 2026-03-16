@@ -6,9 +6,16 @@ const CoupleSection = () => {
   return (
     <section className="relative max-w-4xl mx-auto px-6 py-24 md:py-32 text-center overflow-hidden">
       <img
-        src={floralCorner}
+        src={burgundyFlower}
         alt=""
-        className="absolute top-0 right-0 w-32 opacity-20 pointer-events-none scale-x-[-1]"
+        className="absolute top-[-3%] right-[-5%] w-36 md:w-48 opacity-70 pointer-events-none scale-x-[-1] drop-shadow-md"
+        style={{ filter: 'saturate(1.1) brightness(0.85)' }}
+      />
+      <img
+        src={burgundyFlower}
+        alt=""
+        className="absolute bottom-[-3%] left-[-5%] w-36 md:w-48 opacity-70 pointer-events-none rotate-180 scale-x-[-1] drop-shadow-md"
+        style={{ filter: 'saturate(1.1) brightness(0.85)' }}
       />
 
       <motion.div
