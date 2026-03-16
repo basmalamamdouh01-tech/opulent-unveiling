@@ -8,7 +8,7 @@ import MusicToggle from "@/components/MusicToggle";
 import BirdsSVG from "@/components/BirdsSVG";
 import FloatingPetals from "@/components/FloatingPetals";
 import floralDecoration from "@/assets/floral-decoration.png";
-import floralCorner from "@/assets/floral-corner.png";
+import burgundyFlower from "@/assets/burgundy-flower.png";
 
 const Index = () => {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
