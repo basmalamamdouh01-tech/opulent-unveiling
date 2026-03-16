@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import couplePhoto from "@/assets/couple-photo.jpg";
-import floralCorner from "@/assets/floral-corner.png";
+import burgundyFlower from "@/assets/burgundy-flower.png";
 
 const CoupleSection = () => {
   return (
