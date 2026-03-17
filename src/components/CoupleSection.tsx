@@ -27,7 +27,7 @@ const CoupleSection = () => {
           <img
             src={couplePhoto}
             alt="Ola and Hazem"
-            className="w-full h-full object-cover object-[center_20%] scale-110"
+            className="w-full h-full object-cover object-[center_20%] scale-150"
           />
         </div>
         {/* Gold ring accent */}
