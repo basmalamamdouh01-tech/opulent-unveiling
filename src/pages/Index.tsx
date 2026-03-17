@@ -52,7 +52,7 @@ const Index = () => {
                 alt=""
                 className="absolute top-0 left-0 w-48 md:w-72 opacity-80 pointer-events-none"
                 initial={{ opacity: 0, scale: 0.5, rotate: -20 }}
-                animate={{ opacity: 0.6, scale: 1, rotate: 0 }}
+                animate={{ opacity: 0.8, scale: 1, rotate: 0 }}
                 transition={{ duration: 1.5, delay: 0.2 }}
               />
               <motion.img
