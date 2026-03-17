@@ -71,7 +71,20 @@ const DetailsSection = () => {
               </div>
               <div>
                 <h4 className="font-serif-elegant font-semibold text-lg text-foreground">
-                  6:00 PM
+                  6:00 PM — Katb Ketab
+                </h4>
+                <p className="text-muted-foreground font-serif-elegant">
+                  Religious ceremony
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-5">
+              <div className="w-12 h-12 rounded-full border border-gold flex items-center justify-center shrink-0">
+                <Clock className="w-5 h-5 text-gold" />
+              </div>
+              <div>
+                <h4 className="font-serif-elegant font-semibold text-lg text-foreground">
+                  7:00 PM — Ceremony
                 </h4>
                 <p className="text-muted-foreground font-serif-elegant">
                   Ceremony begins
