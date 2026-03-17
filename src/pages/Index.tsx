@@ -50,7 +50,7 @@ const Index = () => {
               <motion.img
                 src={floralCorner}
                 alt=""
-                className="absolute top-0 left-0 w-32 md:w-48 opacity-25 pointer-events-none"
+                className="absolute top-0 left-0 w-48 md:w-72 opacity-60 pointer-events-none"
                 initial={{ opacity: 0, scale: 0.5, rotate: -20 }}
                 animate={{ opacity: 0.25, scale: 1, rotate: 0 }}
                 transition={{ duration: 1.5, delay: 0.2 }}
