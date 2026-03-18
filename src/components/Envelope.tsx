@@ -77,7 +77,7 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
               YOU ARE INVITED TO
             </p>
             <h1 className="font-script text-4xl md:text-6xl leading-tight" style={{ color: "hsl(350, 50%, 25%)" }}>
-              Ola & Hazem
+              Hazem & Ola
             </h1>
             <p className="font-ui text-[10px] md:text-[11px] tracking-[0.3em] mt-1" style={{ color: "hsl(350, 30%, 40%)" }}>
               WEDDING CELEBRATION
@@ -190,7 +190,7 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
                   SAVE THE DATE
                 </span>
                 <h2 className="font-script text-2xl md:text-4xl text-burgundy mb-1">
-                  Ola & Hazem
+                  Hazem & Ola
                 </h2>
                 <div className="w-10 h-[1px] bg-gold/50 my-2" />
                 <p className="font-serif-elegant text-[11px] md:text-sm italic text-foreground/60">

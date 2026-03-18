@@ -97,7 +97,7 @@ const Index = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
               >
-                Ola & Hazem
+                Hazem & Ola
               </motion.h1>
               <motion.div
                 initial={{ width: 0 }}
@@ -152,7 +152,7 @@ const Index = () => {
 
             {/* Footer */}
             <footer className="py-16 md:py-20 text-center opacity-50">
-              <p className="font-script text-2xl md:text-3xl text-burgundy">Ola & Hazem</p>
+              <p className="font-script text-2xl md:text-3xl text-burgundy">Hazem & Ola</p>
               <p className="font-ui text-[10px] mt-4 text-muted-foreground tracking-[0.2em]">
                 2026 • DESIGNED WITH LOVE
               </p>
