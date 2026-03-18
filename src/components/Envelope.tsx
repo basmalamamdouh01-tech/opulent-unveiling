@@ -264,7 +264,7 @@ const Envelope = ({ onOpen }: EnvelopeProps) => {
                     letterSpacing: "0.15em",
                   }}
                 >
-                  O & H
+                  H & O
                 </span>
               </motion.div>
             </div>
