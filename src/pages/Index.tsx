@@ -4,6 +4,7 @@ import Envelope from "@/components/Envelope";
 import CoupleSection from "@/components/CoupleSection";
 import DetailsSection from "@/components/DetailsSection";
 import MapSection from "@/components/MapSection";
+import FireworksSection from "@/components/FireworksSection";
 import MusicToggle from "@/components/MusicToggle";
 import BirdsSVG from "@/components/BirdsSVG";
 import FloatingPetals from "@/components/FloatingPetals";
@@ -149,6 +150,9 @@ const Index = () => {
 
             {/* Map Section */}
             <MapSection />
+
+            {/* Fireworks & Quote Section */}
+            <FireworksSection />
 
             {/* Footer */}
             <footer className="py-16 md:py-20 text-center opacity-50">
