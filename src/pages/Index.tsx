@@ -151,6 +151,9 @@ const Index = () => {
             {/* Map Section */}
             <MapSection />
 
+            {/* Fireworks & Quote Section */}
+            <FireworksSection />
+
             {/* Footer */}
             <footer className="py-16 md:py-20 text-center opacity-50">
               <p className="font-script text-2xl md:text-3xl text-burgundy">Hazem & Ola</p>
