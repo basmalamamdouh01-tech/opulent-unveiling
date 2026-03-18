@@ -1,21 +1,31 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Music, Pause } from "lucide-react";
 
-const MusicToggle = () => {
+const MusicToggle = ({ autoPlay = false }: { autoPlay?: boolean }) => {
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const toggle = () => {
+  const getAudio = useCallback(() => {
     if (!audioRef.current) {
-      audioRef.current = new Audio(
-        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      );
+      audioRef.current = new Audio("/music/wedding-song.mp3");
       audioRef.current.loop = true;
     }
+    return audioRef.current;
+  }, []);
+
+  useEffect(() => {
+    if (autoPlay) {
+      const audio = getAudio();
+      audio.play().then(() => setPlaying(true)).catch(() => {});
+    }
+  }, [autoPlay, getAudio]);
+
+  const toggle = () => {
+    const audio = getAudio();
     if (playing) {
-      audioRef.current.pause();
+      audio.pause();
     } else {
-      audioRef.current.play();
+      audio.play();
     }
     setPlaying(!playing);
   };
