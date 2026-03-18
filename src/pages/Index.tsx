@@ -33,7 +33,7 @@ const Index = () => {
             <FloatingPetals />
 
             {/* Music toggle */}
-            <MusicToggle autoPlay={showInvitation} />
+            <MusicToggle autoPlay={isEnvelopeOpen} />
 
             {/* Background floral watermark */}
             <div className="fixed inset-0 pointer-events-none z-0">
