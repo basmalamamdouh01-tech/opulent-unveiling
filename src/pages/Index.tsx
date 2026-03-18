@@ -4,6 +4,7 @@ import Envelope from "@/components/Envelope";
 import CoupleSection from "@/components/CoupleSection";
 import DetailsSection from "@/components/DetailsSection";
 import MapSection from "@/components/MapSection";
+import FireworksSection from "@/components/FireworksSection";
 import MusicToggle from "@/components/MusicToggle";
 import BirdsSVG from "@/components/BirdsSVG";
 import FloatingPetals from "@/components/FloatingPetals";
