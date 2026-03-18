@@ -26,7 +26,7 @@ const CoupleSection = () => {
         <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-cream shadow-2xl mx-auto">
           <img
             src={couplePhoto}
-            alt="Ola and Hazem"
+            alt="Hazem and Ola"
             className="w-full h-full object-cover object-[center_25%] scale-100"
           />
         </div>
