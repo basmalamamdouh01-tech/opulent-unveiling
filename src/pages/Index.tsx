@@ -4,6 +4,7 @@ import Envelope from "@/components/Envelope";
 import CoupleSection from "@/components/CoupleSection";
 import DetailsSection from "@/components/DetailsSection";
 import MapSection from "@/components/MapSection";
+import DirectionsSection from "@/components/DirectionsSection";
 import FireworksSection from "@/components/FireworksSection";
 import MusicToggle from "@/components/MusicToggle";
 import BirdsSVG from "@/components/BirdsSVG";
@@ -150,6 +151,9 @@ const Index = () => {
 
             {/* Map Section */}
             <MapSection />
+
+            {/* Directions Section */}
+            <DirectionsSection />
 
             {/* Fireworks & Quote Section */}
             <FireworksSection />
