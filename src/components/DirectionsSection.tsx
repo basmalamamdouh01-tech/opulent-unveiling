@@ -25,6 +25,17 @@ const DirectionsSection = () => {
             className="w-full h-auto"
           />
         </div>
+        <div className="text-center mt-8">
+          <a
+            href="https://drive.google.com/file/d/16PYg03xfNZajbgDGEEONxen31hSfrhNU/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gold/30 bg-gold/5 hover:bg-gold/15 transition-colors font-ui text-xs tracking-[0.15em] text-foreground/70 hover:text-gold"
+          >
+            <Play className="w-4 h-4" />
+            WATCH DIRECTIONS VIDEO
+          </a>
+        </div>
       </motion.div>
     </section>
   );
