@@ -152,6 +152,9 @@ const Index = () => {
             {/* Map Section */}
             <MapSection />
 
+            {/* Directions Section */}
+            <DirectionsSection />
+
             {/* Fireworks & Quote Section */}
             <FireworksSection />
 
