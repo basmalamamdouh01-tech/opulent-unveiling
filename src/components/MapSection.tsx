@@ -16,7 +16,7 @@ const MapSection = () => {
         </h3>
         <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-background">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.123456789!2d31.2345678!3d30.044444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzQwLjAiTiAzMcKwMTQnMDQuNCJF!5e0!3m2!1sen!2seg!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.5!2d31.4!3d30.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zThe+Grove!5e0!3m2!1sen!2seg!4v1234567890"
             width="100%"
             height="400"
             style={{ border: 0 }}
@@ -26,7 +26,15 @@ const MapSection = () => {
             title="The Grove Venue Location"
           />
         </div>
-        <div className="text-center mt-8">
+        <div className="text-center mt-8 flex flex-col items-center gap-3">
+          <a
+            href="https://maps.app.goo.gl/HKpUg74qjM8uj2R96?g_st=ic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-gold/30 bg-gold/5 hover:bg-gold/15 transition-colors font-ui text-xs tracking-[0.15em] text-foreground/70 hover:text-gold"
+          >
+            📍 OPEN IN MAPS
+          </a>
           <a
             href="https://www.instagram.com/thegrovecairo"
             target="_blank"
