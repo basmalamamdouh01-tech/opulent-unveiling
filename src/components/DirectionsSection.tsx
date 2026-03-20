@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Play } from "lucide-react";
 import directionsMap from "@/assets/grove-directions.jpg";
 
 const DirectionsSection = () => {
